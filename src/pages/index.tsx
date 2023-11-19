@@ -2,29 +2,27 @@ import { Button, Text } from "@/components";
 
 export default function Home() {
   return (
-    <div>
-      <Button variant="contain" size="lg">
-        Click Me
-      </Button>
-      <Button variant="ghost" size="lg">
-        Click Me
-      </Button>
-      <Button variant="outline" size="lg">
-        Click Me
-      </Button>
-      <Text variant="h1" color="less-general">
-        This is a test
-      </Text>
-      <Text variant="h2">This is a test</Text>
-      <Text variant="h3" color="blue">
-        This is a test
-      </Text>
-      <Text variant="p" color="red">
-        This is a test
-      </Text>
-      <Text variant="small" color="less-general">
-        This is a test
-      </Text>
-    </div>
+    <main className="container pt-[125px] space-y-10 sm:space-y-20">
+      <div>
+        <Text variant="h2" className="pb-4">
+          Hi, I’m Aizad Ridzo.
+        </Text>
+        <Text variant="p" color="less-general" className="pb-8 md:w-4/6">
+          I&lsquo;m a Front-end Developer well-versed in React and Typescript. I
+          enjoy creating robust digital products. Currently, I&lsquo;m a part of
+          the Trader&lsquo;s Hub squad in Deriv.
+        </Text>
+        <div className="flex align-bottom gap-x-4">
+          <Button variant="contain">Check Out My Projects</Button>
+          <Button variant="outline">Hit Me Up</Button>
+        </div>
+      </div>
+      <div>
+        <Text variant="h3">Work Experience</Text>
+      </div>
+      <div>
+        <Text variant="h3">Personal Projects</Text>
+      </div>
+    </main>
   );
 }

@@ -11,11 +11,11 @@ export const Tags: Record<VariantType, keyof JSX.IntrinsicElements> = {
 };
 
 export const Sizes: Record<VariantType, string> = {
-  h1: "text-6xl font-bold leading-loose tracking-tight",
-  h2: "text-5xl font-bold leading-relaxed tracking-tight",
-  h3: "text-[40px] font-semibold leading-normal",
-  p: "text-lg",
-  small: "text-base",
+  h1: "sm:text-6xl sm:leading-relaxed text-5xl font-bold leading-relaxed tracking-tight",
+  h2: "sm:text-5xl sm:leading-relaxed text-4xl font-bold tracking-tight",
+  h3: "sm:text-3xl text-2xl font-semibold leading-normal",
+  p: "text-xl",
+  small: "text-sm sm:text-base",
 };
 
 export const TextCVA = cva("", {
