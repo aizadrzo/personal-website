@@ -1,4 +1,4 @@
-import { Button } from "@/components";
+import { Button, Text } from "@/components";
 
 export default function Home() {
   return (
@@ -12,6 +12,17 @@ export default function Home() {
       <Button variant="outline" size="lg">
         Click Me
       </Button>
+      <Text variant="h1">This is a test</Text>
+      <Text variant="h2">This is a test</Text>
+      <Text variant="h3" color="blue">
+        This is a test
+      </Text>
+      <Text variant="p" color="red">
+        This is a test
+      </Text>
+      <Text variant="small" color="less-general">
+        This is a test
+      </Text>
     </div>
   );
 }

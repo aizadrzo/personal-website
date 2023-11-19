@@ -1,9 +1,9 @@
-import React, { ButtonHTMLAttributes, FC } from "react";
+import React, { ComponentPropsWithRef, FC } from "react";
 import { ButtonCVA, ButtonVariantProps } from "./Button.classnames";
 import { cn } from "@/utils";
 
 interface ButtonProps
-  extends ButtonHTMLAttributes<HTMLButtonElement>,
+  extends ComponentPropsWithRef<"button">,
     ButtonVariantProps {}
 
 const Button: FC<ButtonProps> = ({
