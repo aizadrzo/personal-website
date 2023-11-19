@@ -12,7 +12,9 @@ export default function Home() {
       <Button variant="outline" size="lg">
         Click Me
       </Button>
-      <Text variant="h1">This is a test</Text>
+      <Text variant="h1" color="less-general">
+        This is a test
+      </Text>
       <Text variant="h2">This is a test</Text>
       <Text variant="h3" color="blue">
         This is a test

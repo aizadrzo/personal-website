@@ -21,8 +21,8 @@ export const Sizes: Record<VariantType, string> = {
 export const TextCVA = cva("", {
   variants: {
     color: {
-      general: "text-white",
-      "less-general": "text-base-content",
+      general: "text-slate-900",
+      "less-general": "text-slate-500",
       primary: "text-primary",
       secondary: "text-secondary",
       accent: "text-accent",
