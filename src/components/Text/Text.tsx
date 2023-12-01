@@ -18,14 +18,16 @@ const Text: FC<TextProps> = ({
   variant,
   children,
   className,
-  color,
+  colorStyle,
   align,
 }) => {
   const Tag = Tags[variant];
   const SizeClassNames = Sizes[variant];
 
   return (
-    <Tag className={cn(SizeClassNames, TextCVA({ align, color, className }))}>
+    <Tag
+      className={cn(SizeClassNames, TextCVA({ align, colorStyle, className }))}
+    >
       {children}
     </Tag>
   );

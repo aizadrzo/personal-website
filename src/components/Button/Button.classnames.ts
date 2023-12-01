@@ -12,6 +12,7 @@ export const ButtonCVA = cva("btn rounded-md", {
       contain: "",
       outline: "btn-outline",
       ghost: "btn-ghost",
+      link: "btn-link",
     },
     colorStyle: {
       primary: "btn-primary",
@@ -22,11 +23,15 @@ export const ButtonCVA = cva("btn rounded-md", {
       yellow: "btn-warning",
       green: "btn-green",
     },
+    active: {
+      true: "btn-active",
+    },
   },
   defaultVariants: {
     variant: "contain",
     size: "md",
     colorStyle: "primary",
+    active: false,
   },
 });
 
