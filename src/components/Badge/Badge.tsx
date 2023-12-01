@@ -9,13 +9,15 @@ const Badge: FC<BadgeProps> = ({
   colorStyle,
   isOutline,
   children,
+  className,
   ...props
-}) => {
-  return (
-    <div className={cn(BadgeCVA({ size, colorStyle, isOutline }))} {...props}>
-      {children}
-    </div>
-  );
-};
+}) => (
+  <div
+    className={cn(BadgeCVA({ size, colorStyle, isOutline, className }))}
+    {...props}
+  >
+    {children}
+  </div>
+);
 
 export default Badge;

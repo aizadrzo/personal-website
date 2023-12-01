@@ -14,17 +14,12 @@ const Button: FC<ButtonProps> = ({
   colorStyle,
   active,
   ...props
-}) => {
-  return (
-    <button
-      className={cn(
-        ButtonCVA({ variant, size, colorStyle, className, active })
-      )}
-      {...props}
-    >
-      {children}
-    </button>
-  );
-};
-Button.displayName = "Button";
+}) => (
+  <button
+    className={cn(ButtonCVA({ variant, size, colorStyle, className, active }))}
+    {...props}
+  >
+    {children}
+  </button>
+);
 export default Button;
