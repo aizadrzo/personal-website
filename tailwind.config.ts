@@ -18,9 +18,17 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require("tailwindcss-animated")],
   daisyui: {
-    themes: ["lofi"],
+    themes: [
+      {
+        light: {
+          ...require("daisyui/src/theming/themes")["lofi"],
+          primary: "#171717",
+          secondary: "#737373",
+        },
+      },
+    ],
   },
 };
 export default config;
