@@ -1,5 +1,5 @@
 import { Accordion, Button, Footer, Text } from "@/components";
-import { workExperience } from "@/constants/content";
+import { workExperience } from "@/constants";
 
 export default function Home() {
   return (
