@@ -1,4 +1,4 @@
-import { Accordion, Button, Footer, Text } from "@/components";
+import { Accordion, Button, Footer, Text, Link } from "@/components";
 import { workExperience } from "@/constants";
 
 export default function Home() {
@@ -19,10 +19,7 @@ export default function Home() {
           I&lsquo;m a Front-end Developer well-versed in React and Typescript. I
           enjoy creating robust digital products. Currently, I&lsquo;m focused
           on building building accessible and human-centric products at{" "}
-          <a className="link underline-offset-2 text-neutral-900">
-            4X Software
-          </a>
-          .
+          <Link isBold>4X Software</Link>.
         </Text>
         <div className="space-x-4">
           <Button variant="contain">Check Out My Projects</Button>
@@ -51,15 +48,7 @@ export default function Home() {
             facilisis sed odio
           </Text>
           <Text variant="small-p" colorStyle="secondary">
-            Check out my{" "}
-            <a className="link underline-offset-2">
-              <Text variant="small-p">LinkedIn</Text>
-            </a>{" "}
-            &{" "}
-            <a className="link underline-offset-2">
-              <Text variant="small-p">Github</Text>
-            </a>
-            .
+            Check out my <Link>LinkedIn</Link> & <Link>Github</Link>.
           </Text>
         </div>
         <div className="h-32 lg:h-full rounded-lg bg-base-200"></div>
@@ -89,8 +78,7 @@ export default function Home() {
             mauris pellentesque pulvinar pellentesque
           </Text>
           <Text variant="small-p" colorStyle="secondary" className="pb-8">
-            For more info, download my resume{" "}
-            <a className="link underline-offset-2 text-neutral-900">here</a>.
+            For more info, download my resume <Link>here</Link>.
           </Text>
         </div>
         <Accordion>

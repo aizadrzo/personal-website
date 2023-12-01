@@ -3,3 +3,4 @@ export { default as Text } from "./Text/Text";
 export { default as Accordion } from "./Accordion/Accordion";
 export { default as Footer } from "./Footer/Footer";
 export { default as Badge } from "./Badge/Badge";
+export { default as Link } from "./Link/Link";
