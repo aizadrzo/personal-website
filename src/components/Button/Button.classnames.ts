@@ -12,7 +12,7 @@ export const ButtonCVA = cva("btn rounded-md", {
       contain: "",
       outline: "btn-outline",
       ghost: "btn-ghost",
-      link: "btn-link",
+      link: "btn-link underline-offset-2",
     },
     colorStyle: {
       primary: "btn-primary",

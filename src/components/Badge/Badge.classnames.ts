@@ -14,6 +14,7 @@ export const BadgeCVA = cva("badge rounded-md", {
       blue: "badge-info",
       red: "badge-error",
       yellow: "badge-warning",
+      green: "badge-success",
     },
     isOutline: {
       true: "badge-outline",

@@ -1,10 +1,10 @@
-import React, { FC, ComponentProps, useState } from "react";
+import React, { FC, ComponentProps, useState, ReactNode } from "react";
 import { Text } from "..";
 import { cn } from "@/utils";
 
 export interface TabProps {
   title: string;
-  children: string;
+  children: ReactNode;
   openByDefault?: boolean;
   name?: ComponentProps<"input">["name"];
 }
@@ -21,8 +21,8 @@ const Tab: FC<TabProps> = ({
   return (
     <div
       className={cn("rounded-md ", {
-        "bg-base-200": isOpen,
-        "hover:bg-base-200": !isOpen,
+        "bg-base-200 border-2 border-base-300": isOpen,
+        "bg-base-200 border-2 border-base-300 hover:bg-base-300": !isOpen,
       })}
     >
       <div
@@ -44,9 +44,7 @@ const Tab: FC<TabProps> = ({
           </Text>
         </div>
         <div className={cn("collapse-content", { "pt-4": isOpen })}>
-          <Text variant="small-p" colorStyle="secondary">
-            {children}
-          </Text>
+          {children}
         </div>
       </div>
     </div>
