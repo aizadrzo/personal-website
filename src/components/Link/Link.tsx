@@ -9,9 +9,14 @@ const Link: FC<LinkProps> = ({
   isBold = false,
   children,
   className,
+  href,
   ...props
 }) => (
-  <a className={cn(LinkCVA({ colorStyle, isBold, className }))} {...props}>
+  <a
+    href={href}
+    className={cn(LinkCVA({ colorStyle, isBold, className }))}
+    {...props}
+  >
     {children}
   </a>
 );
