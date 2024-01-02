@@ -24,7 +24,7 @@ const config: Config = {
       {
         light: {
           ...require("daisyui/src/theming/themes")["lofi"],
-          primary: "#171717",
+          primary: "#161616",
           secondary: "#737373",
         },
       },

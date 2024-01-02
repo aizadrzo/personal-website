@@ -52,7 +52,7 @@ export default function Home() {
             pharetra convallis posuere morbi leo urna molestie at elementum eu
             facilisis sed odio
           </Text>
-          <Text variant="small-p" colorStyle="secondary">
+          <Text variant="small" colorStyle="secondary">
             Check out my <Link>LinkedIn</Link> & <Link>Github</Link>.
           </Text>
         </div>
@@ -69,9 +69,9 @@ export default function Home() {
         </Text>
         <div className="flex flex-wrap gap-2 w-full lg:w-2/3">
         {skills.map(skill => (
-          <div className="border rounded-lg w-fit py-2 px-4 border-base-300 bg-base-200">
+          <Badge>
             <Text variant="p">{skill}</Text>
-            </div>
+          </Badge>
         ))}
         </div>
       </section>
@@ -86,7 +86,7 @@ export default function Home() {
             cursus vitae congue mauris rhoncus aenean vel elit scelerisque
             mauris pellentesque pulvinar pellentesque
           </Text>
-          <Text variant="small-p" colorStyle="secondary" className="pb-8">
+          <Text variant="small" colorStyle="secondary" className="pb-8">
             For more info, download my resume 👉 <Link>here</Link>.
           </Text>
         </div>
@@ -98,14 +98,14 @@ export default function Home() {
               openByDefault={idx === 0}
             >
               <span className="flex items-center justify-between pb-4">
-                <Text variant="small-p" colorStyle="secondary">
+                <Text variant="small" colorStyle="secondary">
                   {content.company}
                 </Text>
-                <Text variant="small-p" colorStyle="secondary">
+                <Text variant="small" colorStyle="secondary">
                   {content.timeline}
                 </Text>
               </span>
-              <Text variant="small-p" colorStyle="secondary">
+              <Text variant="small" colorStyle="secondary">
                 {content.description}
               </Text>
             </Accordion.Tab>
@@ -127,7 +127,7 @@ export default function Home() {
                 <Text variant="p" className="font-semibold card-title">
                   {project.title}
                 </Text>
-                <Text variant="small-p" colorStyle="secondary">
+                <Text variant="small" colorStyle="secondary">
                   {project.description}
                 </Text>
                 <div className="flex space-x-4 justify-end">
@@ -152,7 +152,7 @@ export default function Home() {
         <Text variant="h3" className="pb-4">
           Get in Touch with Me
         </Text>
-        <Text variant="small-p" colorStyle="secondary" className="pb-6">
+        <Text variant="small" colorStyle="secondary" className="pb-6">
           Download my full resume right <Link>here</Link>.
         </Text>
         <div className="flex gap-x-8">

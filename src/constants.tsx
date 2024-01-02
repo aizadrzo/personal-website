@@ -1,10 +1,4 @@
 import {
-  ReactIcon,
-  TypescriptIcon,
-  JavascriptIcon,
-  JestIcon,
-  ScssIcon,
-  CssIcon,
   GithubIcon,
   LinkedinIcon,
   MailIcon,

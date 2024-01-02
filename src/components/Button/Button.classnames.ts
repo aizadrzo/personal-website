@@ -9,29 +9,14 @@ export const ButtonCVA = cva("btn rounded-md", {
       lg: "btn-lg",
     },
     variant: {
-      contain: "",
-      outline: "btn-outline",
-      ghost: "btn-ghost",
-      link: "btn-link underline-offset-2",
-    },
-    colorStyle: {
-      primary: "btn-primary",
-      secondary: "btn-secondary",
-      accent: "btn-accent",
-      blue: "btn-info",
-      red: "btn-error",
-      yellow: "btn-warning",
-      green: "btn-green",
-    },
-    active: {
-      true: "btn-active",
+      contain: "btn-primary hover:bg-[#2c2c2c]",
+      outline: "btn-outline bg-white hover:bg-[#e0e0e0] hover:text-primary",
+      link: "btn-link underline-offset-2 btn-primary",
     },
   },
   defaultVariants: {
     variant: "contain",
     size: "md",
-    colorStyle: "primary",
-    active: false,
   },
 });
 

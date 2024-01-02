@@ -1,9 +1,3 @@
-export { default as ReactIcon } from "./React.svg";
-export { default as TypescriptIcon } from "./Typescript.svg";
-export { default as JavascriptIcon } from "./Javascript.svg";
-export { default as CssIcon } from "./Css.svg";
-export { default as JestIcon } from "./Jest.svg";
-export { default as ScssIcon } from "./Scss.svg";
 export { default as GithubIcon } from "./Github.svg";
 export { default as LinkedinIcon } from "./Linkedin.svg";
 export { default as MailIcon } from "./Mail.svg";
