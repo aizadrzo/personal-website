@@ -1,4 +1,4 @@
-import { Accordion, Button, Text, Link } from "@/components";
+import { Accordion, Button, Text, Link, Badge } from "@/components";
 import {
   workExperience,
   projectDetails,
@@ -67,23 +67,12 @@ export default function Home() {
         <Text variant="h3" className="pb-8">
           Languages & Frameworks
         </Text>
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
-          {skills.map((skill, idx) => (
-            <div
-              className="card border-2 border-base-300 bg-base-200"
-              key={idx}
-            >
-              <div className="card-body">
-                <div className="w-8 pb-2">{skill.icon}</div>
-                <Text variant="p" className="font-semibold card-title">
-                  {skill.name}
-                </Text>
-                <Text variant="small-p" colorStyle="secondary">
-                  {skill.description}
-                </Text>
-              </div>
+        <div className="flex flex-wrap gap-2 w-full lg:w-2/3">
+        {skills.map(skill => (
+          <div className="border rounded-lg w-fit py-2 px-4 border-base-300 bg-base-200">
+            <Text variant="p">{skill}</Text>
             </div>
-          ))}
+        ))}
         </div>
       </section>
       {/* Experience */}
