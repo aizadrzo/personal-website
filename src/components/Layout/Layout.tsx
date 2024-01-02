@@ -1,15 +1,11 @@
-import React, { ReactNode } from "react";
+import React, { PropsWithChildren } from "react";
 import { Footer } from "..";
 
-type LayoutProps = { children: ReactNode };
-
-const Layout = ({ children }: LayoutProps) => {
-  return (
-    <main className="min-h-screen flex flex-col">
-      <div className="container pt-[125px] flex-1">{children}</div>
+const Layout = ({ children }: PropsWithChildren) => (
+    <main className="min-h-screen flex flex-col relative grain bg-neutral-100">
+      <div className="container pt-[125px] flex-1 relative z-10">{children}</div>
       <Footer />
     </main>
   );
-};
 
 export default Layout;

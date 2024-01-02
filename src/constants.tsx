@@ -1,10 +1,4 @@
 import {
-  ReactIcon,
-  TypescriptIcon,
-  JavascriptIcon,
-  JestIcon,
-  ScssIcon,
-  CssIcon,
   GithubIcon,
   LinkedinIcon,
   MailIcon,
@@ -52,42 +46,7 @@ export const workExperience = [
 ];
 
 export const skills = [
-  {
-    name: "React",
-    icon: <ReactIcon />,
-    description: `nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu
-    cursus vitae`,
-  },
-  {
-    name: "Typescript",
-    icon: <TypescriptIcon />,
-    description: `nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu
-    cursus vitae`,
-  },
-  {
-    name: "Javascript",
-    icon: <JavascriptIcon />,
-    description: `nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu
-    cursus vitae`,
-  },
-  {
-    name: "JEST",
-    icon: <JestIcon />,
-    description: `nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu
-    cursus vitae`,
-  },
-  {
-    name: "CSS",
-    icon: <CssIcon />,
-    description: `nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu
-    cursus vitae`,
-  },
-  {
-    name: "SCSS",
-    icon: <ScssIcon />,
-    description: `nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu
-    cursus vitae`,
-  },
+  "React","Typescript","Javascript","JEST","CSS","SCSS",'Astro','Tailwind','NextJS'
 ];
 
 export const projectDetails = [

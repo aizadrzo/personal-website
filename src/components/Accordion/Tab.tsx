@@ -1,19 +1,19 @@
-import React, { FC, ComponentProps, useState, ReactNode } from "react";
+import React, { ComponentProps, useState, ReactNode } from "react";
 import { Text } from "..";
 import { cn } from "@/utils";
 
-export interface TabProps {
+export type TabProps = {
   title: string;
   children: ReactNode;
   openByDefault?: boolean;
   name?: ComponentProps<"input">["name"];
 }
-const Tab: FC<TabProps> = ({
+const Tab = ({
   title,
   children,
   openByDefault,
   name = "accordion-1",
-}) => {
+}:TabProps) => {
   const [isOpen, setOpen] = useState(openByDefault || false);
 
   const toggleAccordion = () => setOpen(!isOpen);

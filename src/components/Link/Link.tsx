@@ -1,17 +1,17 @@
-import React, { ComponentProps, FC } from "react";
+import React, { ComponentProps } from "react";
 import { cn } from "@/utils";
 import { LinkCVA, LinkVariantProps } from "./Link.classnames";
 
-interface LinkProps extends ComponentProps<"a">, LinkVariantProps {}
+type LinkProps = ComponentProps<"a"> & LinkVariantProps
 
-const Link: FC<LinkProps> = ({
+const Link = ({
   colorStyle = "primary",
   isBold = false,
   children,
   className,
   href,
   ...props
-}) => (
+}: LinkProps) => (
   <a
     href={href}
     className={cn(LinkCVA({ colorStyle, isBold, className }))}

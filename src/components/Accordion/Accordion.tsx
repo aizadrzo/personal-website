@@ -1,14 +1,10 @@
-import React, { FC, ReactNode } from "react";
+import React, { PropsWithChildren } from "react";
 import Tab, { TabProps } from "./Tab";
 import { cn } from "@/utils";
 
-interface AccordionProps {
-  children: ReactNode;
-}
+type AccordionComponent = PropsWithChildren & { Tab: TabProps };
 
-type AccordionComponent = FC<AccordionProps> & { Tab: FC<TabProps> };
-
-const Accordion: AccordionComponent = ({ children }) => {
+const Accordion = ({ children }:AccordionComponent) => {
   return (
     <div className={cn("join join-vertical w-full space-y-4")}>{children}</div>
   );

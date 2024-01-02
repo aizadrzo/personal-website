@@ -1,4 +1,4 @@
-import React, { FC, ReactNode } from "react";
+import React, { ReactNode } from "react";
 import { cn } from "@/utils";
 import {
   Sizes,
@@ -8,19 +8,19 @@ import {
   VariantType,
 } from "./Text.classnames";
 
-interface TextProps extends TextVariantProps {
+type TextProps = {
   variant: VariantType;
   className?: string;
   children: ReactNode;
-}
+} & TextVariantProps;
 
-const Text: FC<TextProps> = ({
+const Text = ({
   variant,
   children,
   className,
   colorStyle,
   align,
-}) => {
+}: TextProps) => {
   const Tag = Tags[variant];
   const SizeClassNames = Sizes[variant];
 

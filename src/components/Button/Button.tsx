@@ -1,22 +1,18 @@
-import React, { ComponentPropsWithRef, FC } from "react";
+import React, { ComponentPropsWithRef } from "react";
 import { ButtonCVA, ButtonVariantProps } from "./Button.classnames";
 import { cn } from "@/utils";
 
-interface ButtonProps
-  extends ComponentPropsWithRef<"button">,
-    ButtonVariantProps {}
+type ButtonProps = ComponentPropsWithRef<"button"> & ButtonVariantProps
 
-const Button: FC<ButtonProps> = ({
+const Button = ({
   className,
   size,
   variant,
   children,
-  colorStyle,
-  active,
   ...props
-}) => (
+}: ButtonProps) => (
   <button
-    className={cn(ButtonCVA({ variant, size, colorStyle, className, active }))}
+    className={cn(ButtonCVA({ variant, size, className }))}
     {...props}
   >
     {children}
